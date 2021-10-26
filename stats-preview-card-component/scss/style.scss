@@ -1,0 +1,9 @@
+@use 'custom';
+
+// IMPORT THE COMPONENTS
+
+@use 'components/mixins';
+@use 'components/typography';
+
+// IMPORT THE SECTIONS
+@use 'sections/home';

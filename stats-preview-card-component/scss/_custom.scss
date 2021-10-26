@@ -1,0 +1,30 @@
+// ### Primary
+
+// - Very dark blue (main background): hsl(233, 47%, 7%)
+// - Dark desaturated blue (card background): hsl(244, 38%, 16%)
+// - Soft violet (accent): hsl(277, 64%, 61%)
+
+// ### Neutral
+
+// - White (main heading, stats): hsl(0, 0%, 100%)
+// - Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+// - Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+// MY THEME COLORS
+$blue-dark: hsl(233, 47%, 7%);
+$blue-desaturated-dark: hsl(244, 38%, 16%);
+$violet-soft: hsl(277, 64%, 61%);
+
+// WHITE AND GRAY COLORS
+$white: hsl(0, 0%, 100%);
+$white-transparent: hsla(0, 0%, 100%, 0.75);
+$white-stat-heading: hsla(0, 0%, 100%, 0.6);
+
+$black: #000;
+
+$primary: $blue-dark;
+$secondary: $violet-soft;
+$card-background: $blue-desaturated-dark;
+
+// IMPORT BOOTSTRAP
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

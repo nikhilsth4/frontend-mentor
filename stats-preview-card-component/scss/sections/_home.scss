@@ -1,0 +1,78 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+body {
+  background-color: $primary;
+  font-size: 15px;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.main-content {
+  //   @include absoluteCenter;
+  //   width: 60rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1%;
+  .home-card {
+    background: $card-background;
+
+    border-radius: 7px !important;
+    left: 50px;
+    // justify-content: center !important;
+    // background-color: $blue-desaturated-dark;
+
+    &-left {
+      padding: 55px !important;
+
+      &-title {
+        font-size: 25px;
+      }
+
+      &-desc {
+        font-size: 14px;
+        color: $white-transparent;
+      }
+
+      &-stat-desc {
+        font-size: 12px;
+        color: $white-stat-heading;
+        text-transform: uppercase;
+      }
+    }
+
+    &-right {
+      .wrapper {
+        position: relative;
+      }
+      .wrapper:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $violet-soft;
+        z-index: 999;
+        opacity: 0.3;
+        border-radius: 7px !important;
+      }
+
+      .card--img {
+        border-radius: 0px 7px 7px 0px !important;
+        width: 100%;
+      }
+    }
+
+    // &-info-right {
+    // }
+    // .card--img {
+    //   //   object-fit: fill !important;
+    //   //   border-bottom-left-radius: 0px !important ;
+    //   //   border-top-left-radius: 0px !important ;
+    //   //   border-image: fill;
+    // }
+  }
+}
